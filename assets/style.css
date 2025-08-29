@@ -1,0 +1,90 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+/* Reset some browser defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General page styles */
+body {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+/* Header + navigation */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+nav a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  padding: 10px;
+}
+
+/* Blog post list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive tweaks */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.95rem;
+  }
+}
